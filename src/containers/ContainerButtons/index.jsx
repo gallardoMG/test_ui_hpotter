@@ -11,7 +11,7 @@ const ContainerButtons = () => {
       if (data !== null) {
         dispatch({ type: 'ADD__DATA', payload: JSON.parse(data) });
       } else {
-        fetch('http://localhost:3001/students')
+        fetch('http://hp-api.herokuapp.com/api/characters/students')
           .then(dataStudents => dataStudents.json())
           .then(dataStudents => {
             dispatch({ type: 'ADD__DATA', payload: dataStudents });
@@ -31,7 +31,7 @@ const ContainerButtons = () => {
       if (data !== null) {
         dispatch({ type: 'ADD__DATA', payload: JSON.parse(data) });
       } else {
-        fetch('http://localhost:3001/staff')
+        fetch('http://hp-api.herokuapp.com/api/characters/staff')
           .then(dataStaff => dataStaff.json())
           .then(dataStaff => {
             dispatch({ type: 'ADD__DATA', payload: dataStaff });
