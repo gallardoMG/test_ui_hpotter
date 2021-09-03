@@ -1,0 +1,163 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #374a59;
+  margin: 2.3vw;
+  width: 10rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card__containerImg {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.card__img {
+  object-fit: cover;
+  width: 100%;
+}
+.card__theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.3rem;
+  width: 100%;
+}
+.card__theme--gryffindor {
+  background: linear-gradient(90deg, #ff0000 4.67%, #fed482 96.97%);
+}
+.card__theme--slytherin {
+  background: linear-gradient(90deg, #1c792b 0%, #82e95e 100%);
+}
+.card__theme--hufflepuff {
+  background: linear-gradient(90deg, #ffc700 0%, #fff388 100%);
+}
+.card__theme--ravenclaw {
+  background: linear-gradient(90deg, #0597b7 0%, #66d1ff 100%);
+}
+.card__theme--staff {
+  background: linear-gradient(90deg, #6a1c79 0%, #c36bd4 100%);
+}
+.card__content {
+  background-color: white;
+  height: 6.3rem;
+  width: 100%;
+  position: relative;
+  border-left: 0.7rem solid white;
+  border-right: 0.7rem solid white;
+}
+.card__nameCharacter {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0 0.2rem;
+  color: #081f32;
+  font-weight: 600;
+}
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+  background-color: #fff;
+  font-weight: 600;
+}
+.card__stateCharacter {
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    flex-direction: row;
+    width: 40vw;
+    margin: 1.8rem;
+  }
+  .card__containerImg {
+    width: 170px;
+    height: 170px;
+  }
+  .card__theme {
+    height: 270px;
+    width: 85%;
+  }
+  .card__theme--gryffindor {
+    background: linear-gradient(135deg, #ff0000 4.67%, #fed482 96.97%);
+  }
+  .card__theme--slytherin {
+    background: linear-gradient(135deg, #1c792b 0%, #82e95e 100%);
+  }
+  .card__theme--hufflepuff {
+    background: linear-gradient(135deg, #ffc700 0%, #fff388 100%);
+  }
+  .card__theme--ravenclaw {
+    background: linear-gradient(135deg, #0597b7 0%, #66d1ff 100%);
+  }
+  .card__theme--staff {
+    background: linear-gradient(135deg, #6a1c79 0%, #c36bd4 100%);
+  }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 40rem;
+    padding: 0.6rem 0.7rem;
+    position: relative;
+  }
+  .card__content-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 3px;
+  }
+  .card__icon {
+    color: #999999;
+    width: 1.5rem;
+  }
+  .card__nameCharacter {
+    font-size: 32px;
+    font-size: 2vw;
+    text-align: initial;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -7px;
+    width: 100%;
+    font-weight: 600;
+  }
+  .card__stateCharacter {
+    font-size: 1.1vw;
+    font-weight: 600;
+    line-height: initial;
+  }
+  .card__content-features {
+    line-height: 0.9rem;
+    position: absolute;
+    bottom: 1rem;
+  }
+  .card__p {
+    padding-left: 5px;
+    font-size: 15px;
+    font-size: 90%;
+    font-weight: 600;
+    color: #374a59;
+  }
+  .capitalize {
+    text-transform: capitalize;
+    font-weight: 100;
+  }
+  .card__icon {
+    color: #999999;
+    font-size: 1.9rem;
+    cursor: pointer;
+  }
+}

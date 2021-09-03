@@ -1,44 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# WORK TEST
 
-## Available Scripts
+![](https://ibb.co/Q701FhS)
 
-In the project directory, you can run:
+Despliegue continuo con **heroku** <>
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Inicialización del proyecto
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. `$ git clone https://github.com/gallardoMG/test_UI.git`
+2. `$ cd test_UI`
+3. `npm i`
+4. `npm start`
 
-### `npm test`
+## ¿Qué es lo que más te gustó de tu desarrollo?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Me pareció interesante la temática de Harry Potter, y me gusto trabajar con la plantilla del look & fell de figma.
 
-### `npm run build`
+## Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Implementar code splitting con un spinner atractivo para la carga de datos.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+-Más animaciones llamativas, como un background en movimiento y animaciones ajax con axios para más dinamismo y mejorar la experiencia de usuario.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Poner una funcionalidad extra para ver detalladamente toda la información de los personajes en una ventana emergente.
 
-### `npm run eject`
+-Hacer pruebas unitarias muy bien implementadas con JEST.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-Hacer optimaizaciones.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Refactorizar codigo dando una segunda lectura se mi código.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Fue mi primera vez con json-server, y para hacer las peticiones me marcaba un error 502, al final solo era una incongruencia de los id en la “BD”, lo puede solucionar haciendo testeo con Postman.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+También se me dificulto hacer una conversión a base 64 de las imágenes para poder subirlas a la “BD”, lo pude solucionar leyendo varios artículos del api File Reader.

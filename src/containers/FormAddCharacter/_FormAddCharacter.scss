@@ -1,0 +1,173 @@
+.wrapperForm {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.5s;
+  overflow-y: auto;
+  z-index: 2;
+}
+.formAdd {
+  background-color: whitesmoke;
+  color: #263238e0;
+  width: 90%;
+  border-radius: 0.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.formAdd__quit {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  color: #5f5f5f;
+}
+.formAdd__fieldset {
+  border: 1px solid transparent;
+}
+.formAdd__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+.formAdd__label {
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem 0;
+}
+
+.formAdd__input {
+  background-color: rgb(201, 201, 201);
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  height: 2rem;
+  margin: 0.3rem 0;
+  outline: none;
+  &:focus {
+    background-color: rgb(224, 224, 224);
+  }
+}
+.formAdd__radios {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.formAdd__radio {
+  display: flex;
+}
+.formAdd__file-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-direction: column;
+}
+.formAdd__file {
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(75, 75, 75);
+  overflow: hidden;
+  width: 12.6rem;
+  opacity: 70%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.formAdd__input-file {
+  position: absolute;
+  left: -9.2rem;
+  cursor: pointer;
+}
+.form--hidde {
+  opacity: 0;
+}
+.form--displayNone {
+  display: none;
+}
+.formAdd__houses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.formAdd__legend {
+  width: 100%;
+  padding: 0 0 1rem 0;
+}
+.formAdd__legend-house {
+  width: 100%;
+  padding: 0 0 1rem 0;
+}
+@media screen and (min-width: 800px) {
+  .formAdd {
+    width: 647px;
+    height: 516px;
+    padding: 0.5rem 1.5rem;
+  }
+  .formAdd__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .formAdd__quit {
+    cursor: pointer;
+  }
+  .formAdd__title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+  .formAdd__label {
+    width: 47%;
+    font-size: 14px;
+  }
+  .formAdd__input {
+    background: #e6e4e4;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    height: 3.5rem;
+  }
+  .formAdd__radio {
+    margin: 0 0.2rem;
+    cursor: pointer;
+    input[type='radio'] {
+      cursor: pointer;
+    }
+  }
+  .formAdd__radios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.7rem;
+  }
+  .formAdd__legend {
+    text-align: initial;
+    width: 40%;
+    padding: 1rem 0 0 0;
+    display: flex;
+    gap: 1rem;
+  }
+  .formAdd__legend-house {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .formAdd__file-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+}
+input[type='radio']:checked + span {
+  color: black;
+}

@@ -1,0 +1,33 @@
+.button {
+  width: 150px;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid #6b63b5;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button--active {
+  background-color: #6b63b5;
+}
+.button--form {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  margin: auto;
+  .button--active {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+@media screen and (min-width: 800px) {
+  .button {
+    width: 288px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 67px;
+    backdrop-filter: blur(3px);
+    &:hover {
+      background-color: rgb(165, 159, 212);
+    }
+  }
+}

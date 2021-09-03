@@ -1,0 +1,24 @@
+.containerTiltle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 0.3rem;
+  margin: 1rem 0;
+  .containerTiltle__instructions {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .containerTiltle {
+    gap: 1rem;
+    margin: 8rem 0 1.5rem;
+    .containerTiltle__instructions {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

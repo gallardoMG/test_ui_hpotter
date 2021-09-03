@@ -1,0 +1,13 @@
+.containerCards {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.containerCards__info {
+  text-align: center;
+  color: rgb(141, 141, 141);
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}

@@ -1,0 +1,12 @@
+.containerButtons {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .containerButtons {
+    gap: 9rem;
+  }
+}
