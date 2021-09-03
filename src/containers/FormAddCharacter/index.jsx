@@ -30,7 +30,7 @@ const FormAddCharacter = ({ form, focus }) => {
       image: img,
     };
     if (position === 'hogwartsStudent') {
-      fetch('http://localhost:3001/students', {
+      fetch('https://server-json-hp.herokuapp.com/students', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify(dataPost),
@@ -50,7 +50,7 @@ const FormAddCharacter = ({ form, focus }) => {
           alert('Ocurrio un error, o el personaje ya esta registrado.')
         );
     } else {
-      fetch('http://localhost:3001/staff', {
+      fetch('https://server-json-hp.herokuapp.com/staff', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify(dataPost),
