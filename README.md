@@ -2,7 +2,7 @@
 
 ![](https://ibb.co/Q701FhS)
 
-Despliegue continuo con **heroku** <>
+Despliegue continuo con **Netlify** <>
 
 ---
 
