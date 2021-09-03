@@ -13,13 +13,13 @@ function App() {
   const dataCharacters = useSelector(state => state.getDataReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch('http://localhost:3001/students')
+    fetch('https://server-json-hp.herokuapp.com/students')
       .then(dataStudents => dataStudents.json())
       .then(dataStudents => {
         localStorage.setItem('dataStudents', JSON.stringify(dataStudents));
       });
 
-    fetch('http://localhost:3001/staff')
+    fetch('https://server-json-hp.herokuapp.com/staff')
       .then(dataStaff => dataStaff.json())
       .then(dataStaff => {
         localStorage.setItem('dataStaff', JSON.stringify(dataStaff));

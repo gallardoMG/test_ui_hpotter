@@ -52,7 +52,6 @@ const TagsMenu = ({ form, focus }) => {
       <section className='wrapperTags__favorites' ref={listFavorites}>
         <table className='tableFavorites'>
           <tbody>
-            {console.log(favoritesList)}
             {favoritesList.map(el => (
               <tr key={el.name}>
                 <td className='tableFavorites__character'>
