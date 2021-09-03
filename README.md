@@ -2,7 +2,7 @@
 
 ![](https://ibb.co/Q701FhS)
 
-Despliegue continuo con **HEROKU** <https://harry-potter-test-ui.herokuapp.c>
+Despliegue continuo con **HEROKU** <https://harry-potter-test-ui.herokuapp.com>
 
 ---
 
