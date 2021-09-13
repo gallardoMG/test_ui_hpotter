@@ -2,7 +2,7 @@
 
 ![](https://ibb.co/Q701FhS)
 
-Despliegue continuo con **Netlify** <>
+Despliegue continuo con **HEROKU** <https://harry-potter-test-ui.herokuapp.com>
 
 ---
 
