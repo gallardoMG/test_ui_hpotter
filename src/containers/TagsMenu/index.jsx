@@ -67,6 +67,7 @@ const TagsMenu = ({ form, focus }) => {
                     className='tableFavorites__icon'
                     src={trash}
                     alt='delet'
+                    aria-label='delete favorite'
                     onClick={() => deletCharacter(el)}
                   />
                 </td>

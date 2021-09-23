@@ -118,6 +118,7 @@ const Card = ({ character }) => {
                 alt='ADD'
                 onClick={() => addRemoveFavorites(character)}
                 className='card__icon'
+                aria-label='save card'
               />
             </div>
             <h2 className='card__nameCharacter'>

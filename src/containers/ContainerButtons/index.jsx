@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import GenericButton from '../../components/GenericButton';
+import { apiShowStudents } from '../../utils/APIs';
 
 const ContainerButtons = () => {
   const { students, staff } = useSelector(state => state.stateButtonsReducer);
@@ -11,13 +12,7 @@ const ContainerButtons = () => {
       if (data !== null) {
         dispatch({ type: 'ADD__DATA', payload: JSON.parse(data) });
       } else {
-        fetch('https://server-json-hp.herokuapp.com/students')
-          .then(dataStudents => dataStudents.json())
-          .then(dataStudents => {
-            dispatch({ type: 'ADD__DATA', payload: dataStudents });
-            localStorage.setItem('dataStudents', JSON.stringify(dataStudents));
-          })
-          .catch(e => console.log(`ERROR: ${e}`));
+        apiShowStudents();
       }
     } else {
       dispatch({ type: 'BTN__STATE', payload: { students: false } });
@@ -31,13 +26,7 @@ const ContainerButtons = () => {
       if (data !== null) {
         dispatch({ type: 'ADD__DATA', payload: JSON.parse(data) });
       } else {
-        fetch('https://server-json-hp.herokuapp.com/students')
-          .then(dataStaff => dataStaff.json())
-          .then(dataStaff => {
-            dispatch({ type: 'ADD__DATA', payload: dataStaff });
-            localStorage.setItem('dataStaff', JSON.stringify(dataStaff));
-          })
-          .catch(e => console.log(`ERROR: ${e}`));
+        apiShowStaff();
       }
     } else {
       dispatch({ type: 'BTN__STATE', payload: { staff: false } });
